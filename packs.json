@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Pasgeboren Pakket A",
+    "category": "newborn",
+    "description": "Ideaal voor de allereerste weken. Bevat uitsluitend pasgeboren-formaat luiers voor baby's tot ongeveer 5 kg.",
+    "includes": ["6× prefold newborn", "2× gewatteerde inlegger", "2× wollen broekje", "1× wasnetje", "Informatieblad"],
+    "sizeRange": "≈ 2 – 5 kg",
+    "status": "available",
+    "notes": "Borg €5 + verzending heen & terug door aanvrager."
+  },
+  {
+    "id": 2,
+    "name": "Pasgeboren Pakket B",
+    "category": "newborn",
+    "description": "Tweede pasgeboren pakket met een mix van all-in-one en gefitte luiers voor een vliegende start.",
+    "includes": ["4× all-in-one newborn", "3× gefitte luier", "2× PUL overtrek (cover)", "1× nat zakje", "Informatieblad"],
+    "sizeRange": "≈ 2,5 – 5 kg",
+    "status": "out",
+    "notes": "Momenteel uitgeleend. Aanvragen plaatst je op de wachtlijst."
+  },
+  {
+    "id": 3,
+    "name": "Universeel Pakket A",
+    "category": "onesize",
+    "description": "Ruim assortiment pocket-luiers in onesize-formaat. Geschikt voor de lange termijn — van ±3 kg tot zindelijkheid.",
+    "includes": ["8× pocket luier (onesize)", "8× bamboe inlegger", "4× microvezel inlegger", "1× wasnetje", "1× nat zakje", "Informatieblad"],
+    "sizeRange": "≈ 3 – 16 kg",
+    "status": "available",
+    "notes": null
+  },
+  {
+    "id": 4,
+    "name": "Universeel Pakket B",
+    "category": "onesize",
+    "description": "Gevarieerd pakket met all-in-two systemen (AI2). Handig voor onderweg en snel verwisselen.",
+    "includes": ["5× AI2 buitenlaag", "10× snap-in inlegger", "2× extra bamboe inlegger", "1× wasnetje", "Informatieblad"],
+    "sizeRange": "≈ 3,5 – 16 kg",
+    "status": "available",
+    "notes": "AI2-systeem: buitenlaag hergebruiken, alleen inlegger wisselen bij elke verschoning."
+  },
+  {
+    "id": 5,
+    "name": "Universeel Pakket C — Wol",
+    "category": "onesize",
+    "description": "Pakket met gefitte luiers gecombineerd met wollen en PUL covers. Ideaal voor wie wol wil uitproberen.",
+    "includes": ["5× gefitte luier (onesize)", "2× wollen overtrek", "2× PUL overtrek", "1× wasnetje", "Informatieblad wol"],
+    "sizeRange": "≈ 4 – 14 kg",
+    "status": "maintenance",
+    "notes": "Tijdelijk in onderhoud; verwacht binnenkort terug beschikbaar."
+  },
+  {
+    "id": 6,
+    "name": "Nacht Pakket",
+    "category": "older",
+    "description": "Speciaal samengesteld voor langere nachten. Extra absorptie dankzij bamboe en hennep inleggers.",
+    "includes": ["4× pocket luier (onesize+)", "8× bamboe/hennep inlegger", "2× extra absorptielaag", "1× wasnetje", "Informatieblad"],
+    "sizeRange": "≈ 7 – 18 kg",
+    "status": "available",
+    "notes": "Geschikt voor kinderen die al wat zwaarder zijn en/of langer slapen zonder te wisselen."
+  },
+  {
+    "id": 7,
+    "name": "Oudere Kinderen Pakket",
+    "category": "older",
+    "description": "Grote maten voor peuters en dreumesen. Comfortabele pasvorm voor actieve kinderen.",
+    "includes": ["6× pocket luier (large/XL)", "6× bamboe inlegger", "1× nat zakje", "1× wasnetje", "Informatieblad"],
+    "sizeRange": "≈ 10 – 20 kg",
+    "status": "out",
+    "notes": "Ideaal voor dreumesen van ±12 maanden en ouder."
+  },
+  {
+    "id": 8,
+    "name": "Zindelijkheidsbroekjes Pakket A",
+    "category": "potty",
+    "description": "Trainingsbroekjes voor de overgang naar het potje. Voelen als gewone onderbroekjes maar absorberen kleine ongelukjes.",
+    "includes": ["6× trainingsbroekje (maat 80–92)", "Informatieblad zindelijkheidstraining"],
+    "sizeRange": "≈ 10 – 15 kg / maat 80–92",
+    "status": "available",
+    "notes": "Niet bedoeld als volledige luier — voor gebruik overdag bij de pottraining."
+  },
+  {
+    "id": 9,
+    "name": "Zindelijkheidsbroekjes Pakket B",
+    "category": "potty",
+    "description": "Grotere maten trainingsbroekjes, ook met nacht-optie. Handig voor kinderen die overdag al droog zijn.",
+    "includes": ["4× trainingsbroekje (maat 98–110)", "2× nacht-trainingsbroekje", "Informatieblad"],
+    "sizeRange": "≈ 15 – 20 kg / maat 98–110",
+    "status": "available",
+    "notes": null
+  },
+  {
+    "id": 10,
+    "name": "Mix Ontdekkingspakket",
+    "category": "mix",
+    "description": "Een brede mix van typen en systemen voor wie écht wil vergelijken: pocket, AI2, prefold én gefitte luier.",
+    "includes": ["2× pocket luier", "2× AI2 set", "2× prefold + cover", "1× gefitte luier + cover", "1× wasnetje", "1× nat zakje", "Vergelijkingsblad"],
+    "sizeRange": "≈ 4 – 12 kg",
+    "status": "available",
+    "notes": "Perfect als eerste pakket als je nog niet weet welk systeem bij je past."
+  },
+  {
+    "id": 11,
+    "name": "Reispakket Compact",
+    "category": "mix",
+    "description": "Licht en compact pakketje voor weekendjes weg of als aanvulling op wasbare luiers thuis.",
+    "includes": ["4× pocket luier (onesize)", "4× inlegger", "1× nat zakje", "1× droog zakje", "Informatieblad"],
+    "sizeRange": "≈ 4 – 16 kg",
+    "status": "available",
+    "notes": "Compact formaat = lager gewicht = lagere verzendkosten."
+  },
+  {
+    "id": 12,
+    "name": "Prefold Klassiek Pakket",
+    "category": "mix",
+    "description": "Klassieke prefold-luiers met uitleg over verschillende vouwmethodes. Sterk en duurzaam.",
+    "includes": ["4× prefold maat 1", "4× prefold maat 2", "3× PUL cover (onesize)", "2× Snappie", "Foldguide kaartje", "Informatieblad"],
+    "sizeRange": "≈ 3 – 13 kg",
+    "status": "out",
+    "notes": "Populair pakket voor wie de klassieke, voordelige methode wil uitproberen."
+  }
+]
