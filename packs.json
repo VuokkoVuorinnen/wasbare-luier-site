@@ -1,0 +1,183 @@
+[
+  {
+    "id": "pack-001",
+    "name": "Pasgeboren Starter",
+    "category": "Newborn",
+    "description": "Een compleet startpakket voor pasgeborenen met een mix van prefolds en covers.",
+    "includes": [
+      "6x prefold maat newborn",
+      "2x wasbare cover maat newborn",
+      "6x vliesjes (wasbaar)",
+      "1x wetbag klein"
+    ],
+    "sizeRange": "2–5 kg",
+    "status": "Available",
+    "notes": "Ideaal voor de eerste weken. Inclusief instructiekaartje."
+  },
+  {
+    "id": "pack-002",
+    "name": "Pasgeboren Pocketluiers",
+    "category": "Newborn",
+    "description": "Pocket-luiers voor pasgeborenen, makkelijk in gebruik voor ouders die net beginnen.",
+    "includes": [
+      "8x pocketluier maat newborn",
+      "8x bamboe inlegger newborn",
+      "1x wetbag medium"
+    ],
+    "sizeRange": "2–6 kg",
+    "status": "Out",
+    "notes": "Momenteel uitgeleend. Schrijf je in voor de wachtlijst via het formulier."
+  },
+  {
+    "id": "pack-003",
+    "name": "Onesize Basis",
+    "category": "Onesize",
+    "description": "Klassieke onesizeluiers die meegroeien van ca. 4 kg tot de zindelijkheidstraining.",
+    "includes": [
+      "8x onesizeluier (snap-in systeem)",
+      "8x microvezel inlegger",
+      "4x bamboe boosterpads",
+      "1x wetbag medium"
+    ],
+    "sizeRange": "4–16 kg",
+    "status": "Available",
+    "notes": "Geschikt voor de meeste baby's van ca. 3 maanden."
+  },
+  {
+    "id": "pack-004",
+    "name": "Onesize All-in-Two",
+    "category": "Onesize",
+    "description": "All-in-two systeem: wasbare covers met losse inleggers voor sneller drogen.",
+    "includes": [
+      "6x AI2-cover (onesize)",
+      "12x geplooid inlegger bamboe",
+      "1x snapper",
+      "1x wetbag groot"
+    ],
+    "sizeRange": "5–18 kg",
+    "status": "Available",
+    "notes": "Populair systeem. Covers hoeven niet elke wissel gewassen te worden."
+  },
+  {
+    "id": "pack-005",
+    "name": "Onesize Fitteds",
+    "category": "Onesize",
+    "description": "Gevormde stoffen luiers (fitted) met aparte waterdichte covers.",
+    "includes": [
+      "6x fitted luier (bamboe/katoen mix)",
+      "3x wollen cover maat M",
+      "3x PUL cover onesize",
+      "1x wetbag medium"
+    ],
+    "sizeRange": "5–14 kg",
+    "status": "Maintenance",
+    "notes": "In onderhoud: wordt nagekeken en aangevuld. Beschikbaar over ca. 2 weken."
+  },
+  {
+    "id": "pack-006",
+    "name": "Nacht & Grote Baby",
+    "category": "Older kids / night",
+    "description": "Zware absorberende luiers voor de nacht en voor grotere baby's die meer plassen.",
+    "includes": [
+      "5x fitted luier maat L (bamboe)",
+      "5x boosterpad extra absorptie",
+      "3x waterbestendige cover maat L",
+      "1x wetbag groot"
+    ],
+    "sizeRange": "10–20 kg",
+    "status": "Available",
+    "notes": "Speciaal samengesteld voor de nacht. Extra absorberende combinaties."
+  },
+  {
+    "id": "pack-007",
+    "name": "Nacht Wol",
+    "category": "Older kids / night",
+    "description": "Wollen nachtluierpakket voor ouders die wol willen uitproberen.",
+    "includes": [
+      "6x fitted luier maat M-L",
+      "2x wollen broekje maat M",
+      "2x wollen broekje maat L",
+      "1x potje wolvet (klein)",
+      "1x wetbag medium"
+    ],
+    "sizeRange": "9–18 kg",
+    "status": "Available",
+    "notes": "Inclusief korte handleiding wolonderhoud. Wol hoeft maar elke 2-3 weken gewassen."
+  },
+  {
+    "id": "pack-008",
+    "name": "Zindelijkheidstraining Starter",
+    "category": "Potty training",
+    "description": "Wasbare trainingsbroekjes en lichte luiers voor de overgang naar zindelijkheid.",
+    "includes": [
+      "6x trainingsbroekje (maat 86-104)",
+      "3x lichte wasbare luier maat L/XL",
+      "1x opvouwbaar reispotje",
+      "1x wetbag medium"
+    ],
+    "sizeRange": "12–18 kg / maat 86–104",
+    "status": "Out",
+    "notes": "Uitgeleend tot eind van de maand."
+  },
+  {
+    "id": "pack-009",
+    "name": "Zindelijkheid Gevorderd",
+    "category": "Potty training",
+    "description": "Voor kinderen die al bijna zindelijk zijn maar nog af en toe een ongelukje hebben.",
+    "includes": [
+      "8x trainingsbroekje dun (maat 92-116)",
+      "4x inlegger voor trainingsbroekje",
+      "1x wetbag klein"
+    ],
+    "sizeRange": "Maat 92–116",
+    "status": "Available",
+    "notes": "Dunne broekjes lijken op gewone ondergoed; goed voor motivatie van het kind."
+  },
+  {
+    "id": "pack-010",
+    "name": "Mix Kennismaking",
+    "category": "Mix / other",
+    "description": "Verrassend samengesteld pakket met verschillende systemen om te vergelijken.",
+    "includes": [
+      "2x prefold + cover",
+      "2x pocket onesize",
+      "2x AI2 cover + inlegger",
+      "2x fitted + cover",
+      "1x wetbag medium",
+      "1x vergelijkingskaartje"
+    ],
+    "sizeRange": "5–12 kg (ca. 3-12 maanden)",
+    "status": "Available",
+    "notes": "Perfect om verschillende systemen te vergelijken voor je koopt."
+  },
+  {
+    "id": "pack-011",
+    "name": "Reispakket Compact",
+    "category": "Mix / other",
+    "description": "Licht en compact pakket voor uitjes, weekendjes weg of als aanvulling.",
+    "includes": [
+      "4x onesizeluier compact formaat",
+      "4x inlegger",
+      "2x kleine wetbag",
+      "1x draagtas"
+    ],
+    "sizeRange": "5–16 kg",
+    "status": "Available",
+    "notes": "Compact en licht. Handig voor op reis of als startpakket."
+  },
+  {
+    "id": "pack-012",
+    "name": "Grote Maat Pakket",
+    "category": "Older kids / night",
+    "description": "Luiers voor grotere peuters die nog in luier slapen of overdag nog luier nodig hebben.",
+    "includes": [
+      "5x luier maat XL/XXL",
+      "5x extra absorptie inlegger",
+      "3x cover maat XL",
+      "1x wetbag groot"
+    ],
+    "sizeRange": "16–22 kg",
+    "status": "Available",
+    "notes": "Voor grotere peuters. Moeilijk te vinden in winkels, ideaal om te testen."
+  }
+]
