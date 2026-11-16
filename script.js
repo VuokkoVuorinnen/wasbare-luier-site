@@ -12,6 +12,113 @@
 
   const PACKS_URL = 'packs.json';
 
+  /*
+   * ---- Google Sheets integration ----
+   * To use a Google Sheet as data source instead of packs.json:
+   *
+   * 1. Create a Google Sheet with these exact column headers (row 1):
+   *      id | name | category | description | includes | sizeRange | status | notes
+   *
+   * 2. In the "includes" column, separate items with a semicolon (;)
+   *      Example: 6x prefold maat newborn; 2x wasbare cover; 1x wetbag klein
+   *
+   * 3. Valid "status" values: Available, Out, Maintenance
+   *
+   * 4. Valid "category" values: Newborn, Onesize, Older kids / night,
+   *      Potty training, Mix / other
+   *
+   * 5. Publish the sheet:
+   *      File → Share → Publish to web → Sheet 1 → "Comma-separated values (.csv)" → Publish
+   *
+   * 6. Copy the published URL and paste it below.
+   *
+   * The site will load data from the sheet. If the sheet is unreachable,
+   * it falls back to the local packs.json automatically.
+   */
+  const GOOGLE_SHEET_CSV_URL = ''; // e.g. 'https://docs.google.com/spreadsheets/d/e/2PACX-.../pub?gid=0&single=true&output=csv'
+
+  /** Parse a CSV string (RFC 4180) into a 2-D array of strings */
+  function parseCSV(text) {
+    var rows = [], i = 0, len = text.length;
+    while (i < len) {
+      var row = [];
+      while (true) {
+        var value = '';
+        if (i < len && text[i] === '"') {
+          i++; // opening quote
+          while (i < len) {
+            if (text[i] === '"') {
+              if (i + 1 < len && text[i + 1] === '"') { value += '"'; i += 2; }
+              else { i++; break; } // closing quote
+            } else { value += text[i]; i++; }
+          }
+        } else {
+          while (i < len && text[i] !== ',' && text[i] !== '\n' && text[i] !== '\r') {
+            value += text[i]; i++;
+          }
+        }
+        row.push(value.trim());
+        if (i < len && text[i] === ',') { i++; } else { break; }
+      }
+      if (i < len && text[i] === '\r') i++;
+      if (i < len && text[i] === '\n') i++;
+      if (row.length > 1 || row[0] !== '') rows.push(row);
+    }
+    return rows;
+  }
+
+  /** Convert parsed CSV rows (with header row) into pack objects */
+  function csvToPacks(csvText) {
+    var rows = parseCSV(csvText);
+    if (rows.length < 2) return [];
+    var headers = rows[0].map(function (h) { return h.trim().toLowerCase(); });
+    return rows.slice(1)
+      .filter(function (row) { return row.some(function (c) { return c.trim() !== ''; }); })
+      .map(function (row) {
+        var obj = {};
+        headers.forEach(function (h, idx) { obj[h] = (row[idx] || '').trim(); });
+        var includesRaw = obj.includes || '';
+        return {
+          id:          obj.id || '',
+          name:        obj.name || '',
+          category:    obj.category || '',
+          description: obj.description || '',
+          includes:    includesRaw ? includesRaw.split(';').map(function (s) { return s.trim(); }).filter(Boolean) : [],
+          sizeRange:   obj.sizerange || obj.sizeRange || '',
+          status:      obj.status || 'Available',
+          notes:       obj.notes || '',
+        };
+      })
+      .filter(function (p) { return p.id && p.name; });
+  }
+
+  /** Fetch packs from Google Sheet (CSV) or fall back to local packs.json */
+  function fetchPacks() {
+    if (GOOGLE_SHEET_CSV_URL) {
+      return fetch(GOOGLE_SHEET_CSV_URL)
+        .then(function (res) {
+          if (!res.ok) throw new Error('Spreadsheet niet bereikbaar.');
+          return res.text();
+        })
+        .then(function (csv) {
+          var packs = csvToPacks(csv);
+          if (packs.length === 0) throw new Error('Geen pakketten gevonden in spreadsheet.');
+          return packs;
+        })
+        .catch(function (err) {
+          console.warn('Google Sheet laden mislukt, terugvallen op packs.json:', err.message);
+          return fetch(PACKS_URL).then(function (res) {
+            if (!res.ok) throw new Error('Kon packs.json niet laden.');
+            return res.json();
+          });
+        });
+    }
+    return fetch(PACKS_URL).then(function (res) {
+      if (!res.ok) throw new Error('Kon packs.json niet laden.');
+      return res.json();
+    });
+  }
+
   const statusLabel = {
     Available:   'Beschikbaar',
     Out:         'Uitgeleend',
@@ -92,11 +199,7 @@
     // Show loading state
     grid.innerHTML = '<p class="no-results">Pakketten laden…</p>';
 
-    fetch(PACKS_URL)
-      .then(res => {
-        if (!res.ok) throw new Error('Kon packs.json niet laden.');
-        return res.json();
-      })
+    fetchPacks()
       .then(packs => {
         populateCategoryFilter(packs, catFilter);
 
